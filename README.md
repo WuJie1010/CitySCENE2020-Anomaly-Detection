@@ -1,2 +1,47 @@
-# CitySCENE2020-Anomaly-Detection
-This repository contains source codes of SYSU-BAIDU for CitySCENE Challenge 2020
+# Modularized Framework with Category-Sensitive Abnormal Filter for City Anomaly Detection (ACMMMW 2020)
+
+This repository contains source codes of team SYSU-BAIDU for CitySCENE Challenge 2020, and the technical details please refer to the paper
+"Modularized Framework with Category-Sensitive Abnormal Filter for City Anomaly Detection". 
+
+Our framework obtains a 66.41 MF1 in the test set of the CitySCENE Challenge 2020, which ranks first in the specific anomaly detection task. 
+
+## Requirements
+
+- MMdetection
+
+- Pytorch >=1.1.0
+
+- cuda9
+
+- cudnn7.5
+
+
+#### Train the detection model
+
+```
+cd det_code/PaddleDetection
+sh train.sh
+```
+
+#### Inference Procedure
+
+```
+cd det_code/PaddleDetection
+sh infer.sh
+``
+
+#### Docker for reproducing our results:
+
+Please download the images in [link](https://drive.google.com/file/d/1kbF3EtgxdW83F9EUTX53AGsRE34Uk63i/view), then 
+```
+curl -L -o b53a0eea3f76  https://drive.google.com/file/d/1kbF3EtgxdW83F9EUTX53AGsRE34Uk63i/view
+docker load b53a0eea3f76 
+docker run --gpus all --network none -ti -v <testset_path>:/testset:ro  b53a0eea3f76 /bin/bash
+bash /home/example.sh
+cltr+d (exit)
+docker cp aecd3ec1e4d4:result/task1 ./           
+docker cp aecd3ec1e4d4:result/task2 ./
+Reproduce our results
+
+#### If you have any questions or issues in using this code, please feel free to
+contact us (wujie23@mail2.sysu.edu.cn)
