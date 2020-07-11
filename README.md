@@ -16,20 +16,6 @@ Our framework obtains a 66.41 MF1 in the test set of the CitySCENE Challenge 202
 - cudnn7.5
 
 
-#### Train the detection model
-
-```
-cd det_code/PaddleDetection
-sh train.sh
-```
-
-#### Inference Procedure
-
-```
-cd det_code/PaddleDetection
-sh infer.sh
-```
-
 #### Docker for reproducing our results:
 
 Please download the images in [link](https://drive.google.com/file/d/1kbF3EtgxdW83F9EUTX53AGsRE34Uk63i/view), then 
@@ -42,6 +28,7 @@ cltr+d (exit)
 docker cp aecd3ec1e4d4:result/task1 ./           
 docker cp aecd3ec1e4d4:result/task2 ./
 ```
+The code is released in the docker.
 
 #### If you have any questions or issues in using this code, please feel free to
 contact us (wujie23@mail2.sysu.edu.cn)
