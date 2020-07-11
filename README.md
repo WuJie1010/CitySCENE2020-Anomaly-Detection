@@ -28,7 +28,7 @@ sh train.sh
 ```
 cd det_code/PaddleDetection
 sh infer.sh
-``
+```
 
 #### Docker for reproducing our results:
 
@@ -41,7 +41,7 @@ bash /home/example.sh
 cltr+d (exit)
 docker cp aecd3ec1e4d4:result/task1 ./           
 docker cp aecd3ec1e4d4:result/task2 ./
-Reproduce our results
+```
 
 #### If you have any questions or issues in using this code, please feel free to
 contact us (wujie23@mail2.sysu.edu.cn)
