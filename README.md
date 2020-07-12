@@ -18,9 +18,9 @@ Our framework obtains a 66.41 MF1 in the test set of the CitySCENE Challenge 202
 
 #### Docker for reproducing our results:
 
-Please download the images in [link](https://drive.google.com/file/d/1kbF3EtgxdW83F9EUTX53AGsRE34Uk63i/view), then 
+Please download the images in [link](https://drive.google.com/file/d/1zLqjvXYkHULTByK5XH-vRDa7jRpq-iSF/view?usp=sharing), then 
 ```
-curl -L -o b53a0eea3f76  https://drive.google.com/file/d/1kbF3EtgxdW83F9EUTX53AGsRE34Uk63i/view
+curl -L -o b53a0eea3f76  https://drive.google.com/file/d/1zLqjvXYkHULTByK5XH-vRDa7jRpq-iSF/view?usp=sharing
 docker load b53a0eea3f76 
 docker run --gpus all --network none -ti -v <testset_path>:/testset:ro  b53a0eea3f76 /bin/bash
 bash /home/example.sh
