@@ -7,8 +7,6 @@ Our framework obtains a 66.41 MF1 in the test set of the CitySCENE Challenge 202
 
 ## Requirements
 
-- MMdetection
-
 - Pytorch >=1.1.0
 
 - cuda9
@@ -30,5 +28,4 @@ docker cp aecd3ec1e4d4:result/task2 ./
 ```
 The code is released in the docker.
 
-#### If you have any questions or issues in using this code, please feel free to
-contact us (wujie10558@gmail.com)
+#### If you have any questions or issues in using this code, please feel free to contact us (wujie10558@gmail.com)
