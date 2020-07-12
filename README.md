@@ -1,4 +1,4 @@
-# Modularized Framework with Category-Sensitive Abnormal Filter for City Anomaly Detection (ACMMMW 2020)
+# Modularized Framework with Category-Sensitive Abnormal Filter for City Anomaly Detection (ACMMM Multimedia Grand Challenge 2020)
 
 This repository contains source codes of team SYSU-BAIDU for CitySCENE Challenge 2020, and the technical details please refer to the paper
 "Modularized Framework with Category-Sensitive Abnormal Filter for City Anomaly Detection". 
@@ -31,4 +31,4 @@ docker cp aecd3ec1e4d4:result/task2 ./
 The code is released in the docker.
 
 #### If you have any questions or issues in using this code, please feel free to
-contact us (wujie23@mail2.sysu.edu.cn)
+contact us (wujie10558@gmail.com)
